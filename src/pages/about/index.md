@@ -2,7 +2,7 @@
 templateKey: about-page
 title: Web and lit
 ---
-### Closing the gap with Native elements 
+### Closing the gap with Native elements
 
 We don't need no JavaScript framework to use Web Components. The parts of the Web Components spec custom elements v1, templates, slots, and ShadowDOM all work in the browser. This means no dependency wrangling to start coding Web Components
 
@@ -14,4 +14,4 @@ You don't need a ton of JavaScript just to render UI. Web Components are benefic
 
 ### Library for tomorrow
 
-**We have seen how polymer team have been developing their backward compatible tools. Now that the web standards are defined the api allows all standard apis mentioned in [spec](https://spec.whatwg.org/) with polyfill.**
+**Now that the web standards are defined the api allows all standard apis mentioned in [spec](https://spec.whatwg.org/) with polyfill. We have seen how polymer team have been developing their backward compatible tools. We are good for tomorrow.**
