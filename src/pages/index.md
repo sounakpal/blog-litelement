@@ -1,30 +1,21 @@
 ---
 templateKey: index-page
-title: Great coffee with a conscience
+title: Litelement Advanced. 
 image: /img/home-jumbotron.jpg
-heading: Great coffee with a conscience
-subheading: Support sustainable farming while enjoying a cup
+heading: Hi My Name is Sounak
+subheading: I am trying to cover some advanced topics you will know to work with litelements while creating webcomponents and some basic javascript allows you out of the hood.
 mainpitch:
-  title: Why Kaldi
+  title: Why webcomponents with lit element
   description: >
-    Kaldi is the coffee store for everyone who believes that great coffee
-    shouldn't just taste good, it should do good too. We source all of our beans
-    directly from small scale sustainable farmers and make sure part of the
-    profits are reinvested in their communities.
+    We recommend lit-html with the lit-element base class as a general-purpose library for building web components. lit-html is feature complete, extremely lightweight and offers a great development experience. Check out the [lit-html](https://lit-html.polymer-project.org) page for code examples and more information.
+
 description: >-
-  Kaldi is the ultimate spot for coffee lovers who want to learn about their
-  java’s origin and support the farmers that grew it. We take coffee production,
-  roasting and brewing seriously and we’re glad to pass that knowledge to
-  anyone.
+  12212121
 intro:
   blurbs:
     - image: /img/coffee.png
       text: >
-        We sell green and roasted coffee beans that are sourced directly from
-        independent farmers and farm cooperatives. We’re proud to offer a
-        variety of coffee beans grown with great care for the environment and
-        local communities. Check our post or contact us directly for current
-        availability.
+        1212
     - image: /img/coffee-gear.png
       text: >
         We offer a small, but carefully curated selection of brewing gear and

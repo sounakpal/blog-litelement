@@ -1,5 +1,6 @@
 ---
-templateKey: about-page
+templateKey: 'about-page'
+path: /about
 title: Web and lit
 ---
 ### Closing the gap with Native elements
