@@ -1,19 +1,17 @@
 ---
-templateKey: 'about-page'
-path: /about
-title: About our values
+templateKey: about-page
+title: Web and lit
 ---
-### Shade-grown coffee
-Coffee is a small tree or shrub that grows in the forest understory in its wild form, and traditionally was grown commercially under other trees that provided shade. The forest-like structure of shade coffee farms provides habitat for a great number of migratory and resident species.
+### Closing the gap with Native elements 
 
-### Single origin
-Single-origin coffee is coffee grown within a single known geographic origin. Sometimes, this is a single farm or a specific collection of beans from a single country. The name of the coffee is then usually the place it was grown to whatever degree available.
+We don't need no JavaScript framework to use Web Components. The parts of the Web Components spec custom elements v1, templates, slots, and ShadowDOM all work in the browser. This means no dependency wrangling to start coding Web Components
 
-### Sustainable farming
-Sustainable agriculture is farming in sustainable ways based on an understanding of ecosystem services, the study of relationships between organisms and their environment. What grows where and how it is grown are a matter of choice and careful consideration for nature and communities.
+You don't need a ton of JavaScript just to render UI. Web Components are beneficial for instances where loading heavy dependencies prohibits user interaction, like in the case of mobile.
 
-### Direct sourcing
-Direct trade is a form of sourcing practiced by some coffee roasters. Advocates of direct trade practices promote direct communication and price negotiation between buyer and farmer, along with systems that encourage and incentivize quality.
+### Lot of ideas drive from JavaScript
 
-### Reinvest profits
-We want to truly empower the communities that bring amazing coffee to you. That’s why we reinvest 20% of our profits into farms, local businesses and schools everywhere our coffee is grown. You can see the communities grow and learn more about coffee farming on our blog.
+**It’s straight-forward and simple.** LitElement stays as close as it can to standard JavaScript and HTML. On the HTML side, there are minimal proprietary attributes, tags, etc. so that your finished HTML looks… well, normal. On the JavaScript side, the components you build follow the syntax and format of standard ES6 modules.
+
+### Library for tomorrow
+
+**We have seen how polymer team have been developing their backward compatible tools. Now that the web standards are defined the api allows all standard apis mentioned in [spec](https://spec.whatwg.org/) with polyfill.**
