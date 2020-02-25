@@ -4,9 +4,8 @@ title: Litelement Advanced.
 image: /img/home-jumbotron.jpg
 heading: Hi My Name is Sounak
 subheading: >-
-  I am trying to cover some advanced topics you will know to work with
-  litelements while creating webcomponents and some basic javascript allows you
-  out of the hood.
+  I am trying to cover some advanced topics you will need to know to work with
+  litelements
 mainpitch:
   title: Why webcomponents with lit element
   description: >
