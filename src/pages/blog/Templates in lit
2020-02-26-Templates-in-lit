@@ -26,7 +26,7 @@ Use regular query selectors on the element instance to access your dom nodes.
 
 LitElement uses shadow dom, so the selector should be done on the shadowroot of the element. 
 
-![query-dom-in-litelements](/img/query-selector-shadow AM.png "query-dom-in-litelements")
+![query-dom-in-litelements](/img/query-selector-shadow.png "query-dom-in-litelements")
 
  Always be aware that the first render of the element happens async, so the requested dom nodes might not be available when running this function.
 
