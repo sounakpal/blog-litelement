@@ -12,7 +12,7 @@ tags:
 ---
 
 
-## Light Dom
+## Light Dom are alternatives.
 
 If you don't want to use shadow DOM, you can overwrite the \`createRenderRoot\` method. By default, LitElement sets the render root to the shadowDom. 
 
@@ -20,7 +20,7 @@ Try using it for some complicated ones which needs some extensive and complicate
 
 ![createRenderRoot](/img/light-dom.png "Code block")
 
-## Query Selectors
+## Query Selectors is shadow
 
 Use regular query selectors on the element instance to access your dom nodes.
 
@@ -32,7 +32,7 @@ LitElement uses shadow dom, so the selector should be done on the shadowroot of 
 
 ![]()
 
-## Repeat
+## Repeat in lit
 
 For dynamic lists that are re-ordered frequently, you can use the repeat directive. This directive handles efficient re-ordering of dom-nodes without unnecessarily recreating them. For this to work, items in the list should be unique. An identify function is passed to tell the directive how to identify individual items.
 
