@@ -1,33 +1,39 @@
 ---
 templateKey: blog-post
-title: Making sense of the SCAA’s new Flavor Wheel
-date: 2016-12-17T15:04:10.000Z
+title: Templates in lit
+date: 2016-02-23T20:04:10.000Z
+description: >-
+  We will learn the idea of light dom, how to query DOM, run a repeat in
+  templates 
 featuredpost: false
 featuredimage: /img/flavor_wheel.jpg
-description: The Coffee Taster’s Flavor Wheel, the official resource used by coffee tasters, has been revised for the first time this year.
 tags:
-  - flavor
-  - tasting
+  - Template
+  - lit-html
+  - repeat
 ---
-![flavor wheel](/img/flavor_wheel.jpg)
+## Light Dom
 
-The SCAA updated the wheel to reflect the finer nuances needed to describe flavors more precisely. The new descriptions are more detailed and hence allow cuppers to distinguish between more flavors.
+If you don't want to use shadow DOM, you can overwrite the \`createRenderRoot\` method. By default, LitElement sets the render root to the shadowDom. 
 
-While this is going to be a big change for professional coffee tasters, it means a lot to you as a consumer as well. We’ll explain how the wheel came to be, how pros use it and what the flavors actually mean.
+Try using it for some complicated ones which needs some extensive and complicated SLOT handling. Also we found a blocker of using svg with this approach. The svg stopped working in FireFox when consumed inside a shadow component.
 
-## What the updates mean to you
+![createRenderRoot](/img/Screenshot 2020-02-26 at 2.13.05 AM.png "Code block")
 
-The Specialty Coffee Association of America (SCAA), founded in 1982, is a non-profit trade organization for the specialty coffee industry. With members located in more than 40 countries, SCAA represents every segment of the specialty coffee industry, including:
+## Query Selectors
 
-* producers
-* roasters
-* importers/exporters
-* retailers
-* manufacturers
-* baristas
+Use regular query selectors on the element instance to access your dom nodes.
 
-For over 30 years, SCAA has been dedicated to creating a vibrant specialty coffee community by recognizing, developing and promoting specialty coffee. SCAA sets and maintains quality standards for the industry, conducts market research, and provides education, training, resources, and business services for its members.
+LitElement uses shadow dom, so the selector should be done on the shadowroot of the element. 
 
-Coffee cupping, or coffee tasting, is the practice of observing the tastes and aromas of brewed coffee. It is a professional practice but can be done informally by anyone or by professionals known as "Q Graders". A standard coffee cupping procedure involves deeply sniffing the coffee, then loudly slurping the coffee so it spreads to the back of the tongue.
+![query-dom-in-litelements](/img/Screenshot 2020-02-26 at 2.38.34 AM.png "query-dom-in-litelements")
 
-The coffee taster attempts to measure aspects of the coffee's taste, specifically the body (the texture or mouthfeel, such as oiliness), sweetness, acidity (a sharp and tangy feeling, like when biting into an orange), flavour (the characters in the cup), and aftertaste. Since coffee beans embody telltale flavours from the region where they were grown, cuppers may attempt to identify the coffee's origin.
+Because of shadow dom, the selectors are scoped to only this element instance's dom. Always be aware that the first render of the element happens async, so the requested dom nodes might not be available when running this function.
+
+![]()
+
+## Repeat
+
+For dynamic lists that are re-ordered frequently, you can use the repeat directive. This directive handles efficient re-ordering of dom-nodes without unnecessarily recreating them. For this to work, items in the list should be unique. An identify function is passed to tell the directive how to identify individual items.
+
+![](/img/Screenshot 2020-02-26 at 2.51.23 AM.png)
