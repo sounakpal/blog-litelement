@@ -1,20 +1,23 @@
 ---
 templateKey: index-page
-title: Litelement Advanced. 
+title: Litelement Advanced.
 image: /img/home-jumbotron.jpg
 heading: Hi My Name is Sounak
-subheading: I am trying to cover some advanced topics you will know to work with litelements while creating webcomponents and some basic javascript allows you out of the hood.
+subheading: >-
+  I am trying to cover some advanced topics you will know to work with
+  litelements while creating webcomponents and some basic javascript allows you
+  out of the hood.
 mainpitch:
   title: Why webcomponents with lit element
   description: >
-    We recommend lit-html with the lit-element base class as a general-purpose library for building web components. lit-html is feature complete, extremely lightweight and offers a great development experience. Check out the [lit-html](https://lit-html.polymer-project.org) page for code examples and more information.
-
-description: >-
-  12212121
+    We recommend lit-html with the lit-element base class as a general-purpose
+    library for building web components. lit-html is feature complete, extremely
+    lightweight and offers a great development experience. 
+description: '12212121'
 intro:
   blurbs:
     - image: /img/coffee.png
-      text: >
+      text: |
         1212
     - image: /img/coffee-gear.png
       text: >
@@ -59,3 +62,4 @@ main:
     alt: Coffee beans
     image: /img/products-grid1.jpg
 ---
+
