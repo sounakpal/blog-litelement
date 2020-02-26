@@ -1,17 +1,18 @@
 ---
 templateKey: index-page
-title: Litelement Advanced.
+title: LitElement Advanced.
 image: /img/home-jumbotron.jpg
-heading: Hi My Name is Sounak
+heading: Hi! My name is Sounak.
 subheading: >-
   I am trying to cover some advanced topics you will need to know to work with
-  litelements
+  LitElements.
 mainpitch:
-  title: Why webcomponents with lit element
+  title: Why Build Web-Components with LitElement?
   description: >
-    We recommend lit-html with the lit-element base class as a general-purpose
-    library for building web components. lit-html is feature complete, extremely
-    lightweight and offers a great development experience. 
+    It is recommended to use Lit-HTML with the LitElement base class as a
+    general-purpose library for building web components. Moreover, Lit-HTML is
+    comprehensive feature, extremely lightweight and offers a great development
+    experience. 
 description: '12212121'
 intro:
   blurbs:
