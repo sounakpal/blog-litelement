@@ -1,6 +1,7 @@
 ---
 templateKey: 'about-page'
 path: /about
+image: /img/litelementBanner.png
 title: Web and lit
 ---
 ### Closing the gap with Native elements

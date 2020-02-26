@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import AniLink from "gatsby-plugin-transition-link/AniLink";
 
 import logo from '../img/logo.svg'
 import facebook from '../img/social/facebook.svg'
@@ -14,8 +14,8 @@ const Footer = class extends React.Component {
       <footer className="footer has-background-black has-text-white-ter">
         <div className="content has-text-centered">
           <h4 style={{
-            color: "#fff"
-          }}>Advanced Lit</h4>
+                      color: "#fff"
+                    }}>Advanced Lit</h4>
         </div>
         <div className="content has-text-centered has-background-black has-text-white-ter">
           <div className="container has-background-black has-text-white-ter">
@@ -24,24 +24,24 @@ const Footer = class extends React.Component {
                 <section className="menu">
                   <ul className="menu-list">
                     <li>
-                      <Link to="/" className="navbar-item">
+                      <AniLink swipe entrtyOffset={80} direction="left" top="entry" to="/" className="navbar-item">
                         Home
-                      </Link>
+                      </AniLink>
                     </li>
                     <li>
-                      <Link className="navbar-item" to="/about">
+                      <AniLink className="navbar-item" swipe entrtyOffset={80} direction="left" top="entry" to="/about">
                         About
-                      </Link>
+                      </AniLink>
                     </li>
                     {/*<li>
-                      <Link className="navbar-item" to="/products">
+                      <AniLink className="navbar-item" swipe entrtyOffset={80} direction="left" top="entry" to="/products">
                         Products
-                      </Link>
+                      </AniLink>
                     </li>
                     <li>
-                      <Link className="navbar-item" to="/contact/examples">
+                      <AniLink className="navbar-item" swipe entrtyOffset={80} direction="left" top="entry" to="/contact/examples">
                         Form Examples
-                      </Link>
+                      </AniLink>
                     </li>*/}
                     <li>
                       <a
@@ -60,14 +60,14 @@ const Footer = class extends React.Component {
                 <section>
                   <ul className="menu-list">
                     <li>
-                      <Link className="navbar-item" to="/blog">
+                      <AniLink className="navbar-item" swipe entrtyOffset={80} direction="left" top="entry" to="/blog">
                         Latest Stories
-                      </Link>
+                      </AniLink>
                     </li>
                     <li>
-                      <Link className="navbar-item" to="/contact">
+                      <AniLink className="navbar-item" swipe entrtyOffset={80} direction="left" top="entry" to="/contact">
                         Contact
-                      </Link>
+                      </AniLink>
                     </li>
                   </ul>
                 </section>

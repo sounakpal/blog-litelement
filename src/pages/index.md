@@ -1,7 +1,6 @@
 ---
 templateKey: index-page
 title: LitElement Advanced.
-image: /img/home-jumbotron.jpg
 heading: Hi! My name is Sounak.
 subheading: >-
   I am trying to cover some advanced topics you will need to know to work with

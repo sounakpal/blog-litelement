@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Link, graphql, StaticQuery } from 'gatsby'
+import AniLink from "gatsby-plugin-transition-link/AniLink";
+import { graphql, StaticQuery } from 'gatsby'
 import PreviewCompatibleImage from './PreviewCompatibleImage'
 
 class BlogRoll extends React.Component {
@@ -30,12 +31,12 @@ class BlogRoll extends React.Component {
                     </div>
                   ) : null}
                   <p className="post-meta">
-                    <Link
+                    <AniLink paintDrip hex="#f5f5f5"
                       className="title has-text-primary is-size-4"
                       to={post.fields.slug}
                     >
                       {post.frontmatter.title}
-                    </Link>
+                    </AniLink>
                     <span> &bull; </span>
                     <span className="subtitle is-size-5 is-block">
                       {post.frontmatter.date}
@@ -46,9 +47,9 @@ class BlogRoll extends React.Component {
                   {post.excerpt}
                   <br />
                   <br />
-                  <Link className="button" to={post.fields.slug}>
+                  <AniLink paintDrip hex="#f5f5f5" className="button" to={post.fields.slug}>
                     Keep Reading →
-                  </Link>
+                  </AniLink>
                 </p>
               </article>
             </div>

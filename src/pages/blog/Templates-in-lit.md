@@ -7,6 +7,7 @@ description: >-
   templates.
 featuredpost: false
 featuredimage: /img/flavor_wheel.jpg
+transitionImage: /img/web-components-concepts.png
 tags:
   - Template
   - lit-html

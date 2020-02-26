@@ -8,14 +8,34 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content
 
   return (
-    <section className="section section--gradient">
-      <div className="container">
+
+    <section className="">
+    <div
+      className="full-width-image margin-top-0"
+      style={{
+        backgroundColor: 'rgb(0, 0, 0, 0.3)',
+      }}
+    >
+      <div style={{
+            color: 'white',
+            lineHeight: '1',
+            padding: '0.5em',
+            maxWidth: '90%',
+            margin: '0 auto',
+            padding: '20px'
+          }}>
+        <h1
+          className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
+        >
+          {title}
+        </h1>
+      </div>
+      </div>
+      <div className="container section section--gradient">
         <div className="columns">
           <div className="column is-10 is-offset-1">
             <div className="section">
-              <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-                {title}
-              </h2>
+            
               <PageContent className="content" content={content} />
             </div>
           </div>
