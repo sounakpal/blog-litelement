@@ -3,11 +3,18 @@ module.exports = {
     title: 'lit-element helpers',
     description:
       'Front end developer trying to help people with lit-element.',
+    url:"https://litelement-advanced.netlify.com"
   },
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-transition-link',
     'gatsby-plugin-sass',
+    {
+      resolve: `gatsby-plugin-disqus`,
+      options: {
+        shortname: `https-litelement-advanced-netlify-com`
+      }
+    },
     {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
       resolve: 'gatsby-source-filesystem',

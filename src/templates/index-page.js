@@ -19,7 +19,8 @@ export const IndexPageTemplate = ({
     <div
       className="full-width-image margin-top-0"
       style={{
-        backgroundColor: 'rgba(48, 47, 109, 0.3)',
+        background: "rgb(2,0,36)",
+        background: "linear-gradient(149deg, rgba(23,54,60,1) 22%, rgba(18,82,97,0.9444152661064426) 62%, rgba(90,211,212,1) 100%)"
       }}
     >
 

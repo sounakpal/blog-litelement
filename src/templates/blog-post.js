@@ -5,7 +5,9 @@ import Helmet from 'react-helmet'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
-
+import useSiteMetadata from '../components/SiteMetadata'
+import { Disqus, CommentCount } from 'gatsby-plugin-disqus'
+  
 export const BlogPostTemplate = ({
   content,
   contentComponent,
@@ -14,8 +16,9 @@ export const BlogPostTemplate = ({
   title,
   helmet,
 }) => {
+  console.log(title);
   const PostContent = contentComponent || Content
-
+  
   return (
     <section className="section">
       {helmet || ''}
@@ -54,10 +57,17 @@ BlogPostTemplate.propTypes = {
   helmet: PropTypes.object,
 }
 
+
 const BlogPost = ({ data }) => {
   const { markdownRemark: post } = data
-
+ const disqusC = {
+  url: useSiteMetadata()['url'] + window.location.pathname,
+  identifier: data.markdownRemark.id,
+  title: data.markdownRemark.frontmatter.title
+}
+  
   return (
+
     <Layout>
       <BlogPostTemplate
         content={post.html}
@@ -75,6 +85,10 @@ const BlogPost = ({ data }) => {
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
       />
+      <div class="disqusC">
+        <CommentCount config={disqusC} placeholder="..." />
+        <Disqus config={disqusC} />
+      </div>
     </Layout>
   )
 }
