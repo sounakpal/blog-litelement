@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 import { graphql, StaticQuery } from 'gatsby'
 import PreviewCompatibleImage from './PreviewCompatibleImage'
+import { trackCustomEvent } from 'gatsby-plugin-google-analytics';
 
 class BlogRoll extends React.Component {
   render() {
@@ -34,6 +35,17 @@ class BlogRoll extends React.Component {
                     <AniLink paintDrip hex="#f5f5f5"
                       className="title has-text-primary is-size-4"
                       to={post.fields.slug}
+                      entry={{
+                        trigger: ({ exit, node }) =>
+                        trackCustomEvent({
+                          // string - required - The object that was interacted with (e.g.video)
+                          category: "Blogs",
+                          // string - required - Type of interaction (e.g. 'play')
+                          action: "Click",
+                          // string - optional - Useful for categorizing events (e.g. 'Spring Campaign')
+                          label: `${post.frontmatter.title}`
+                        })
+                      }}
                     >
                       {post.frontmatter.title}
                     </AniLink>
@@ -47,7 +59,18 @@ class BlogRoll extends React.Component {
                   {post.excerpt}
                   <br />
                   <br />
-                  <AniLink paintDrip hex="#f5f5f5" className="button" to={post.fields.slug}>
+                  <AniLink paintDrip hex="#f5f5f5" className="button" to={post.fields.slug}
+                  entry={{
+                    trigger: ({ exit, node }) =>
+                    trackCustomEvent({
+                      // string - required - The object that was interacted with (e.g.video)
+                      category: "Blogs",
+                      // string - required - Type of interaction (e.g. 'play')
+                      action: "Click",
+                      // string - optional - Useful for categorizing events (e.g. 'Spring Campaign')
+                      label: `${post.frontmatter.title}`
+                    })
+                  }}>
                     Keep Reading →
                   </AniLink>
                 </p>

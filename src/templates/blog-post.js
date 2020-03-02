@@ -61,7 +61,7 @@ BlogPostTemplate.propTypes = {
 const BlogPost = ({ data ,location}) => {
   const { markdownRemark: post } = data
  const disqusC = {
-  url: useSiteMetadata()['url'] +  location.pathname,
+  url: useSiteMetadata()['url'] +  location ? location.pathname:'',
   identifier: data.markdownRemark.id,
   title: data.markdownRemark.frontmatter.title
 }
