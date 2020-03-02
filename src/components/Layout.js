@@ -26,6 +26,11 @@ const TemplateWrapper = ({ children }) => {
           href={`${withPrefix('/')}img/favicon-32x32.png`}
           sizes="32x32"
         />
+        <link 
+          href="https://fonts.googleapis.com/css?family=Raleway:200,600,700,900&display=swap"
+          rel="stylesheet"
+          />
+
         <link
           rel="icon"
           type="image/png"

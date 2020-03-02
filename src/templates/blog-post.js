@@ -85,7 +85,7 @@ const BlogPost = ({ data ,location}) => {
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
       />
-      <div class="disqusC">
+      <div className="disqusC">
         <CommentCount config={disqusC} placeholder="..." />
         <Disqus config={disqusC} />
       </div>
