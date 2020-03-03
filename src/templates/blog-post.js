@@ -5,7 +5,6 @@ import Helmet from 'react-helmet'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
-import useSiteMetadata from '../components/SiteMetadata'
 import { Disqus, CommentCount } from 'gatsby-plugin-disqus'
   
 export const BlogPostTemplate = ({
@@ -16,7 +15,6 @@ export const BlogPostTemplate = ({
   title,
   helmet,
 }) => {
-  console.log(title);
   const PostContent = contentComponent || Content
   
   return (
@@ -61,7 +59,7 @@ BlogPostTemplate.propTypes = {
 const BlogPost = ({ data ,location}) => {
   const { markdownRemark: post } = data
  const disqusC = {
-  url: useSiteMetadata()['url'] +  location ? location.pathname:'',
+  url: location ? location.origin:'' +  location ? location.pathname:'',
   identifier: data.markdownRemark.id,
   title: data.markdownRemark.frontmatter.title
 }
