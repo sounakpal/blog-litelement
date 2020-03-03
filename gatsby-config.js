@@ -19,7 +19,7 @@ module.exports = {
       options: {
         // The property ID; the tracking code won't be generated without it
         trackingId: "UA-159433853-1",
-        cookieDomain: "https://litelement-advanced.netlify.com/",
+        cookieDomain: "auto",
       },
     },
     {

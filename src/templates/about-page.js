@@ -13,14 +13,12 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
     <div
       className="full-width-image margin-top-0"
       style={{
-        background: "rgb(173,4,44)",
         background: "linear-gradient(149deg, rgba(173,4,44,1) 22%, rgba(167,15,89,0.9444152661064426) 62%, rgba(119,46,114,0.9752275910364145) 100%)"
       }}
     >
       <div style={{
             color: 'white',
             lineHeight: '1',
-            padding: '0.5em',
             maxWidth: '90%',
             margin: '0 auto',
             padding: '20px'

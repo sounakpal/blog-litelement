@@ -1,7 +1,6 @@
 import React from 'react'
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 import github from '../img/github-icon.svg'
-import logo from '../img/logo.svg'
 
 const Navbar = class extends React.Component {
   constructor(props) {
@@ -47,8 +46,8 @@ const Navbar = class extends React.Component {
             {/* Hamburger menu */}
             <div
               className={`navbar-burger burger ${this.state.navBarActiveClass}`}
-              data-target="navMenu"
-              onClick={() => this.toggleHamburger()}
+              data-target="navMenu" aria-expanded={`${this.state.active}`} role="button" tabIndex="0"
+              onClick={this.toggleHamburger}
             >
               <span />
               <span />
