@@ -8,22 +8,25 @@ export default class BlogIndexPage extends React.Component {
     return (
       <Layout>
         <div
-          className="full-width-image-container margin-top-0"
+          className="full-width-image margin-top-0"
           style={{
-            backgroundImage: `url('/img/blog-index.png')`,
+            background: "linear-gradient(149deg, rgb(163, 173, 4) 22%, rgba(80, 167, 15, 0.62) 62%, rgba(255, 255, 255, 0.976) 100%)"
           }}
         >
-          <h1
-            className="has-text-weight-bold is-size-1"
-            style={{
-              boxShadow: '0.5rem 0 0 #f40, -0.5rem 0 0 #f40',
-              backgroundColor: 'rgba(255,255,255,0.2)',
-              color: 'white',
-              padding: '1rem',
-            }}
-          >
-            Talking town
-          </h1>
+          <section style={{
+                color: 'white',
+                lineHeight: '1',
+                maxWidth: '90%',
+                margin: '0 auto',
+                padding: '20px'
+              }}>
+            <h1
+              className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
+            >
+              Lit Stories <span aria-label="fire icon">🔥</span>
+            </h1>
+
+          </section>
         </div>
         <section className="section">
           <div className="container">

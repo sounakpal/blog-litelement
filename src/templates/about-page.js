@@ -4,7 +4,7 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 
-export const AboutPageTemplate = ({ title, content, contentComponent }) => {
+export const AboutPageTemplate = ({ title, description, content, contentComponent }) => {
   const PageContent = contentComponent || Content
 
   return (
@@ -13,7 +13,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
     <div
       className="full-width-image margin-top-0"
       style={{
-        background: "linear-gradient(149deg, rgba(173,4,44,1) 22%, rgba(167,15,89,0.9444152661064426) 62%, rgba(119,46,114,0.9752275910364145) 100%)"
+        background: "linear-gradient(149deg, rgb(173, 4, 44) 22%, rgba(167, 15, 89, 0.61) 62%, rgb(255, 255, 255) 100%)"
       }}
     >
       <div style={{
@@ -28,6 +28,8 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
         >
           {title}
         </h1>
+        <h3 className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
+          style={{marginTop: '20px'}}>{description}</h3>
       </div>
       </div>
       <div className="container section section--gradient">
@@ -46,6 +48,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
 
 AboutPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
 }
@@ -58,6 +61,7 @@ const AboutPage = ({ data }) => {
       <AboutPageTemplate
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
+        description={post.frontmatter.description}
         content={post.html}
       />
     </Layout>
@@ -76,6 +80,7 @@ export const aboutPageQuery = graphql`
       html
       frontmatter {
         title
+        description
       }
     }
   }

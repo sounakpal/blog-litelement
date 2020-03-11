@@ -1,6 +1,7 @@
 ---
 templateKey: about-page
 title: Web and lit
+description: Create and share Custom Elements that work on any site, and play nicely with frameworks of all kinds. 
 ---
 ### Closing the gap with Native Elements
 
